@@ -1,0 +1,14 @@
+//- Основной шаблон для всех страниц
+block vars
+
+html
+  head
+    title My Site - #{pageTitle}
+    block scripts
+  body
+    .wrapper
+        include header.pug
+        .content
+            .container
+                block content
+        include footer.pug

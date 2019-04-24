@@ -1,0 +1,44 @@
+$primary-bg: #ECEFF1
+$secondary-bg: #90A4AE
+
+html, body
+    background: $primary-bg
+    margin: 0
+    padding: 0
+    font-size: 14px
+    height: 100%
+body, header, footer
+    overflow: hidden
+
+.wrapper
+    display: flex
+    flex-direction: column
+    height: 100%
+.content
+    flex: 1 0 auto
+.footer
+    flex: 0 0 auto
+
+.container
+    width: 1200px
+    margin: 0 auto
+
+.header
+    background: $secondary-bg
+    padding: 1rem 0
+    &__logo
+        margin: 1rem auto
+        width: 150px
+        height: 150px
+        border-radius: 100%
+        overflow: hidden
+        img 
+            width: 100%
+    &__title
+        text-align: center
+        font-size: 2rem
+        text-transform: uppercase
+
+.footer
+    background: url("../img/bg.png")
+    height: 100px
